@@ -34,7 +34,6 @@ def fetch_website(urllib_version, url):
     except:
         print('Exception')
 
-
 def load_yaml(filename):
     stream = open(filename)
     deserialized_data = yaml.load(stream, Loader=yaml.Loader) #deserializing data
@@ -64,4 +63,3 @@ if __name__ == '__main__':
     elif choice == "4":
         password = input("Enter master password: ")
         authenticate(password)
-
